@@ -1,0 +1,77 @@
+# =============================================================================
+# Git Ignore for Intermobile Containers Hub (WordPress + WooCommerce)
+# =============================================================================
+
+# Sensitive Configuration & Credentials (NEVER commit to public or private repos)
+wp-config.php
+wp-config-local.php
+.env
+.env.*
+
+# Local Server Configuration
+.htaccess
+*.conf
+
+# WordPress Core Folders (Installed directly via Hostinger)
+wp-admin/
+wp-includes/
+
+# WordPress Core Root Files
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# Media Uploads & Generated Thumbnails (Upload via Hostinger File Manager / SFTP)
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/wflogs/
+
+# Standard Third-Party Plugins (Installed via Hostinger / WP Admin)
+wp-content/plugins/woocommerce/
+wp-content/plugins/akismet/
+wp-content/plugins/hello.php
+
+# Default WordPress Themes (Keep only custom theme)
+wp-content/themes/twentytwentythree/
+wp-content/themes/twentytwentyfour/
+wp-content/themes/twentytwentyfive/
+
+# Development, Migration & Scratch Scripts
+download_product_images.py
+prepare_catalog.py
+generate_assets.py
+import_woocommerce_catalog.php
+check_status.php
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+
+# Operating System & IDE Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.log
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.gemini/
